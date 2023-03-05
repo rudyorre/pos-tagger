@@ -1,5 +1,5 @@
 # Parts-of-Speech Tagger using Viterbi Algorithm and Hidden Markov Models
-This project is a Python implementation of a Parts-of-Speech (POS) tagger using the Viterbi algorithm and Hidden Markov Models (HMM). Given an input sentence, the tagger outputs the most likely sequence of POS tags for each word in the sentence.
+This project is a Python implementation of a Parts-of-Speech (POS) tagger using the Viterbi algorithm and Hidden Markov Models (HMM). Given an input sentence, the tagger outputs the most likely sequence of POS tags for each word in the sentence. Algorithm based off of https://en.wikipedia.org/wiki/Viterbi_algorithm.
 
 ## Dependencies
 - Python 3.x
