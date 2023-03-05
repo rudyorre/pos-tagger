@@ -1,26 +1,22 @@
-# Starter Code for CS162 HW3
+# Parts-of-Speech Tagger using Viterbi Algorithm and Hidden Markov Models
+This project is a Python implementation of a Parts-of-Speech (POS) tagger using the Viterbi algorithm and Hidden Markov Models (HMM). Given an input sentence, the tagger outputs the most likely sequence of POS tags for each word in the sentence.
 
-Welcome to the coding part for the HW3! 
+## Dependencies
+- Python 3.x
+- [nltk](https://www.nltk.org/)
 
-Example running command:
-```
-python pos_tagger.py
-```
-
-You need to install the [nltk](https://www.nltk.org/) package if `use_nltk` is set to True.
-
-We provide the unit test code to help you debug. After you implement the TODO blocks, you can run
-```
-python test.py 
+## Usage
+The tagger is implemented in tag.py. To use it, simply run:
+```bash
+$ python3 tag.py -i "Eddie kicks the ball."
+[('Eddie', 'NP'), ('kicked', 'VBD'), ('the', 'AT'), ('ball', 'NN'), ('.', '.')]
 ```
 
-If successful, you will see outputs like
-```
-....
-----------------------------------------------------------------------
-Ran 4 tests in 1.243s
-
-OK
+By default, the tagger uses its own HMM model to tag the sentence. If you want to compare the tagger's output to NLTK's POS tagger's output, you can add the `--use_nltk` argument:
+```bash
+$ python3 tag.py -i "Eddie kicks the ball." --use_nltk
+[('Eddie', 'NNP'), ('kicked', 'VBD'), ('the', 'DT'), ('ball', 'NN'), ('.', '.')]
 ```
 
-
+## License
+This project is licensed under the MIT License.
