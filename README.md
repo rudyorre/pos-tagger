@@ -18,5 +18,7 @@ $ python3 tag.py -i "Eddie kicks the ball." --use_nltk
 [('Eddie', 'NNP'), ('kicked', 'VBD'), ('the', 'DT'), ('ball', 'NN'), ('.', '.')]
 ```
 
+A set of basic tests can be run using `pos_tagger.py` and `test.py`, which show that on our development dataset, the NLTK Parts-of-Speech tagger achieves an accuracy of 62% while this implementation achieves 42%.
+
 ## License
 This project is licensed under the MIT License.
