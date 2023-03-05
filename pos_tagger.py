@@ -93,7 +93,7 @@ class POSTagger():
         """
         emis_prob = defaultdict(lambda: 0) # if a tuple is unseen during training, we set its emission probability to 0
         for tag, word in self.tag_word_cnt:
-            emis_prob[(tag, word)] = self.tag_word_cnt[(tag, word)] / self.tag_unigram_cnt[tag]
+            emis_prob[tag, word] = self.tag_word_cnt[tag, word] / self.tag_unigram_cnt[tag]
         return emis_prob
 
     def init_prob(self, tag):
